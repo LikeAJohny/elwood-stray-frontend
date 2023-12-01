@@ -1,0 +1,21 @@
+---
+import { getSections } from "../api/queries";
+import Socials from "../sections/Socials.astro";
+
+const sections = await getSections();
+const socials = sections.find((s) => s._id === "socials");
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+		<h1>Elwood Stray</h1>
+		<Socials socials={socials.socials} />
+	</body>
+</html>

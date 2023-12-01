@@ -1,0 +1,14 @@
+---
+import { Socials } from "../types/sections";
+
+const { socials }: { socials: Socials["socials"] } = Astro.props;
+---
+
+<section>
+  <h2>Socials</h2>
+  {socials.map((social) => (
+    <div>
+      {social.name}
+    </div>
+  ))}
+</section>
