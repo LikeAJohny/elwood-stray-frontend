@@ -16,7 +16,7 @@ const shows: Shows["shows"] = showsSchema.shows.filter((show) => dayjs(show.date
     <div class="shows">
       {shows.map((show) => (
         <div class="show">
-          <div class="date">
+          <div class="date text-xl">
             {dayjs(show.date).format("ddd, MMM DD YYYY")}
           </div>
           <div class="info">
@@ -28,13 +28,13 @@ const shows: Shows["shows"] = showsSchema.shows.filter((show) => dayjs(show.date
               </span>
             )}
           </div>
-          <div class="location">
+          <div class="location text-xl">
             {show.location} {show.city}, {show.country}
           </div>
-          <div class="links">
+          <div class="mt-4 flex justify-center">
             <a
               href="https://eventfrog.de/de/p/konzert/hard-rock-heavy-metal/elwood-stray-gone-with-the-flow-album-releaseshow-7066846436378178625.html"
-              class="btn btn-small">Tickets</a>
+              class="btn max-w-max px-16 py-4">Tickets</a>
           </div>
         </div>
       ))}
@@ -60,12 +60,12 @@ const shows: Shows["shows"] = showsSchema.shows.filter((show) => dayjs(show.date
 
     .shows-container .shows .show {
         display: grid;
+        gap: .5rem;
         justify-content: center;
         align-items: center;
         padding: 32px 16px;
         font-family: var(--theme-font);
         border-top: 1px solid var(--theme-main-color);
-        line-height: 1.75rem;
         text-align: center;
     }
 
@@ -78,10 +78,34 @@ const shows: Shows["shows"] = showsSchema.shows.filter((show) => dayjs(show.date
     }
 
     .shows-container .shows .show .info {
-        color: var(--theme-main-color);
+        color: var(--theme-secondary-color);
     }
 
     .shows-container .shows .show .links {
         margin-top: 1rem;
+    }
+
+    .btn {
+        display: grid;
+        outline: 0;
+        cursor: pointer;
+        background-color: transparent;
+        padding: .5rem 2rem;
+        font-size: 1rem;
+        color: var(--theme-main-color);
+        border: 1px solid var(--theme-main-color);
+        transition: transform .25s;
+    }
+
+    .btn:hover,
+    .btn:focus {
+        animation: pulse 1s;
+        box-shadow: 0 0 0 2em transparent;
+        border: 1px solid var(--theme-secondary-color);
+        color: var(--theme-secondary-color);
+    }
+
+    @keyframes pulse {
+        0% { box-shadow: 0 0 0 0 var(--theme-secondary-color); }
     }
 </style>
