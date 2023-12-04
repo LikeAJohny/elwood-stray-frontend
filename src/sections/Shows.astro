@@ -4,6 +4,7 @@ import type { Shows } from "../types/schemas";
 import dayjs from "dayjs";
 
 const showsSchema = await loadSchema<Shows>("shows");
+const shows: Shows["shows"] = showsSchema.shows.filter((show) => dayjs(show.date).isAfter(dayjs()));
 ---
 
 <section id="shows">
@@ -13,7 +14,7 @@ const showsSchema = await loadSchema<Shows>("shows");
       <img src="/assets/images/crowd.jpg" alt="Show" class="w-full aspect-[3] object-cover">
     </div>
     <div class="shows">
-      {showsSchema.shows.map((show) => (
+      {shows.map((show) => (
         <div class="show">
           <div class="date">
             {dayjs(show.date).format("ddd, MMM DD YYYY")}
