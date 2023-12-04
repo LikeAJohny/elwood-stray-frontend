@@ -1,8 +1,9 @@
-import { sanityClient } from "./client.ts";
-import type { Sections } from "@/types/sections.ts";
+import type { Schema } from "@/types/schemas.ts";
+import { sanityClient } from "@/api/client.ts";
 
-export async function getSections(): Promise<Sections> {
-  const query = `*`;
+export async function loadSchema<T>(id: string): Promise<Schema<T>> {
+  const query = `*[_type == '${id}']`;
+  const schema = await sanityClient.fetch<Schema<T>[]>(query);
 
-  return await sanityClient.fetch(query);
+  return schema[0];
 }

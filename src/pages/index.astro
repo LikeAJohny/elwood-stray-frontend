@@ -1,21 +1,39 @@
 ---
-import { getSections } from "../api/queries";
-import Socials from "../sections/Socials.astro";
-
-const sections = await getSections();
-const socials = sections.find((s) => s._id === "socials");
+import "../static/css/normalize.css";
+import "../static/css/theme.css";
+import Header from "../sections/Header.astro";
+import Announcement from "../sections/Announcement.astro";
+import Media from "../sections/Media.astro";
+import Shows from "../sections/Shows.astro";
+import Footer from "../sections/Footer.astro";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Elwood Stray</h1>
-		<Socials socials={socials.socials} />
-	</body>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="generator" content={Astro.generator} />
+  <title>Elwood Stray</title>
+  <script
+    src="https://kit.fontawesome.com/162ec1a8cf.js"
+    crossorigin="anonymous"></script>
+</head>
+<body>
+<Header />
+<main class="text-white">
+  <div class="m-auto grid max-w-screen-xl justify-center gap-4 p-4">
+    <Announcement />
+    <Media />
+    <Shows />
+  </div>
+</main>
+<Footer />
+</body>
 </html>
+
+<style>
+    main {
+        background: linear-gradient(var(--theme-secondary-color), var(--theme-main-color), var(--theme-secondary-color), black);
+    }
+</style>

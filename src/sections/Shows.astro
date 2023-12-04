@@ -1,0 +1,86 @@
+---
+import { loadSchema } from "../api/queries";
+import { Shows } from "../types/schemas";
+import dayjs from "dayjs";
+
+const showsSchema = await loadSchema<Shows>("shows");
+---
+
+<section id="shows">
+  <div class="shows-container bg-[rgba(0,0,0,.8)] p-8">
+    <h2 class="text-2xl w-full text-center m-[0_0_2rem_0]">SHOWS</h2>
+    <div class="image">
+      <img src="/assets/images/crowd.jpg" alt="Show" class="w-full aspect-[3] object-cover">
+    </div>
+    <div class="shows">
+      {showsSchema.shows.map((show) => (
+        <div class="show">
+          <div class="date">
+            {dayjs(show.date).format("ddd, MMM DD YYYY")}
+          </div>
+          <div class="info">
+            {show.name}
+            {show.subName && (
+              <span>
+                <br>
+                {show.subName}
+              </span>
+            )}
+          </div>
+          <div class="location">
+            {show.location} {show.city}, {show.country}
+          </div>
+          <div class="links">
+            <a
+              href="https://eventfrog.de/de/p/konzert/hard-rock-heavy-metal/elwood-stray-gone-with-the-flow-album-releaseshow-7066846436378178625.html"
+              class="btn btn-small">Tickets</a>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+    h2 {
+        font-family: var(--theme-font);
+    }
+
+    .shows-container .image img {
+        width: 100%;
+        aspect-ratio: 3;
+        object-fit: cover;
+    }
+
+    .shows-container .shows {
+        display: grid;
+        margin-top: 16px;
+    }
+
+    .shows-container .shows .show {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding: 32px 16px;
+        font-family: var(--theme-font);
+        border-top: 1px solid var(--theme-main-color);
+        line-height: 1.75rem;
+        text-align: center;
+    }
+
+    .shows-container .shows .show:last-child {
+        border-bottom: 1px solid var(--theme-main-color);
+    }
+
+    .shows-container .shows .show .date {
+        text-transform: uppercase;
+    }
+
+    .shows-container .shows .show .info {
+        color: var(--theme-main-color);
+    }
+
+    .shows-container .shows .show .links {
+        margin-top: 1rem;
+    }
+</style>

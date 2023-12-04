@@ -1,4 +1,4 @@
-type Section = {
+export type Schema<T> = T & {
   _id: string;
   _type: string;
   _rev: string;
@@ -6,9 +6,7 @@ type Section = {
   _updatedAt: string;
 };
 
-export type Sections = [Settings & Socials & Media & Shows & Footer];
-
-export type Settings = Section & {
+export type Settings = {
   primaryColor: {
     hex: string;
   };
@@ -17,33 +15,39 @@ export type Settings = Section & {
   };
 };
 
-export type Socials = Section & {
+export type Socials = {
   socials: {
     name: string;
     url: string;
+    icon: string;
+    color: {
+      hex: string;
+    };
   }[];
 };
 
-export type Media = Section & {
+export type Media = {
   headline: string;
   video: string;
 };
 
-export type Shows = Section & {
+export type Shows = {
   headline: string;
   shows: {
     date: string;
+    name?: string;
+    subName?: string;
     location?: string;
     city: string;
     country: string;
     ticketLink: string;
-  };
+  }[];
 };
 
-export type Footer = Section & {
+export type Footer = {
   sections: {
     title: string;
     link: string;
     linkTitle: string;
-  };
+  }[];
 };

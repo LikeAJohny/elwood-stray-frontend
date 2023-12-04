@@ -1,0 +1,66 @@
+:root {
+    --theme-main-color: #C25559;
+    --theme-secondary-color: #86A297;
+    --theme-font: Elwood, Arial sans-serif;
+    --theme-font-main-color: #FFFFFF;
+    --theme-font-secondary-color: #000000;
+}
+
+@font-face {
+    font-family: Elwood;
+    src: url('/assets/fonts/PPMonumentExtended-Bold.woff');
+}
+
+h1, h2, h3 {
+    font-family: var(--theme-font);
+}
+
+h1 {
+    color: var(--theme-main-color);
+    border-top: 1px solid var(--theme-main-color);
+    border-bottom: 1px solid var(--theme-main-color);
+    padding: 1rem 0;
+}
+
+h2 {
+    color: var(--theme-secondary-color);
+    border-bottom: 1px solid var(--theme-secondary-color);
+    padding-bottom: 1rem;
+}
+
+h3 {
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn {
+    display: grid;
+    outline: 0;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: var(--theme-main-color);
+    border: 1px solid var(--theme-main-color);
+    transition: transform .25s;
+}
+
+.btn-small {
+    padding: 8px 16px;
+}
+
+.btn:hover,
+.btn:focus {
+    animation: pulse 1s;
+    box-shadow: 0 0 0 2em transparent;
+    border: 1px solid var(--theme-secondary-color);
+    color: var(--theme-secondary-color);
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 var(--theme-secondary-color); }
+}

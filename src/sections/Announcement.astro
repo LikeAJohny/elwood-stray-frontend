@@ -1,0 +1,168 @@
+---
+
+---
+
+<section id="announcement">
+  <div class="announcement">
+    <div class="announcement__image">
+      <img src="/assets/images/gone-with-the-flow-bundle.png"
+           alt="Album Gone With The Flow Bundle">
+    </div>
+    <div class="announcement__text">
+      <h1>GONE WITH <br> THE FLOW</h1>
+      <h2>OUT NOW</h2>
+      <a href="https://www.outoflineshop.de/catalogsearch/result/?q=elwood+stray" target="_blank" class="btn">
+        ORDER
+      </a>
+      <a href="https://open.spotify.com/intl-de/album/3jN00mERREzn8a5zSJE19L?si=UxDjv56fRHWL5PpZ_N9uGg" target="_blank"
+         class="btn">
+        LISTEN
+      </a>
+    </div>
+  </div>
+  <div class="socials">
+    <div class="spotify">
+      <a href="https://open.spotify.com/artist/6n5DUGtIWYMurrtVt7IdZr" target="_blank">
+        <em class="fa fa-spotify"></em>
+      </a>
+    </div>
+    <div class="apple-music">
+      <a href="https://music.apple.com/de/album/burn-the-bridge-ep/1236861471?uo=4" target="_blank">
+        <em class="fa fa-apple"></em>
+      </a>
+    </div>
+    <div class="youtube">
+      <a href="https://www.youtube.com/channel/UCGp7H4gXt8e_hhDJl8LWQTw" target="_blank">
+        <em class="fa fa-youtube"></em>
+      </a>
+    </div>
+    <div class="deezer">
+      <a href="https://www.deezer.com/de/artist/10293536" target="_blank">
+        <em class="fa fa-music"></em>
+      </a>
+    </div>
+    <div class="instagram">
+      <a href="https://www.instagram.com/elwood_stray" target="_blank">
+        <em class="fa fa-instagram"></em>
+      </a>
+    </div>
+    <div class="facebook">
+      <a href="https://facebook.com/elwoodstrayband" target="_blank">
+        <em class="fa fa-facebook"></em>
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+    .announcement {
+        display: grid;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 32px;
+    }
+
+    .announcement img {
+        max-width: 100%;
+    }
+
+    .announcement .announcement__text {
+        font-family: var(--theme-font);
+        color: var(--theme-main-color);
+        text-align: center;
+    }
+
+    .announcement .announcement__text a {
+        margin-top: 1.5rem;
+    }
+
+    .socials {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.8);
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+
+    .socials > * {
+        border-right: 1px solid white;
+    }
+
+    .socials > div:last-child {
+        border-right: none;
+    }
+
+    .socials a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .socials a:hover {
+        transition: color .33s;
+    }
+
+    .socials em {
+        font-size: 2rem;
+    }
+
+    .socials .spotify:hover a {
+        color: #1DB954;
+    }
+
+    .socials .apple-music:hover a {
+        color: silver;
+    }
+
+    .socials .youtube:hover a {
+        color: #FF0000;
+    }
+
+    .socials .facebook:hover a {
+        color: #4267B2;
+    }
+
+    .socials .deezer:hover a {
+        color: #00c7f2;
+    }
+
+    .socials .instagram:hover a {
+        color: #C13584;
+    }
+
+    @media screen and (min-width: 960px) {
+        #announcement {
+            display: grid;
+            grid-template-columns: 11fr 1fr;
+            gap: 1rem;
+        }
+
+        .announcement {
+            grid-template-columns: 1.5fr 1fr;
+            gap: 1rem;
+        }
+
+        .socials {
+            grid-template-columns: revert;
+            margin-top: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .socials > * {
+            display: grid;
+            height: 100%;
+            border-bottom: 1px solid white;
+            border-right: none;
+        }
+
+        .socials > div:last-child {
+            border-bottom: none;
+        }
+
+        .socials em {
+            font-size: 2.25rem;
+        }
+    }
+</style>

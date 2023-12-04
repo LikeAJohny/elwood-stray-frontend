@@ -1,0 +1,41 @@
+---
+import { loadSchema } from "../api/queries";
+import { Footer } from "../types/schemas";
+
+const footerSchema = await loadSchema<Footer>('footer');
+---
+
+<footer>
+  <div class="info">
+    {footerSchema.sections.map((block) => (
+      <div class="info-block">
+        <h3>{block.title}</h3>
+        <a href={block.link}>{block.linkTitle}</a>
+      </div>
+    ))}
+  </div>
+</footer>
+
+<style>
+    footer {
+        padding: 32px;
+        background-color: black;
+        text-align: center;
+    }
+
+    .info {
+        display: grid;
+        gap: 1.5rem;
+    }
+
+    .info-block h3 {
+        font-size: 1.25rem;
+    }
+
+    .info-block a {
+        color: silver;
+        text-decoration: underline;
+        font-family: var(--theme-font);
+        font-size: 0.75rem;
+    }
+</style>

@@ -1,0 +1,27 @@
+---
+import { loadSchema } from "../api/queries";
+import { videoIdFromUrl } from "../lib/video-urls";
+import { Media } from "../types/schemas";
+
+const mediaSchema = await loadSchema<Media>("media");
+---
+
+<section id="video">
+  <div class="video p-8 bg-[rgba(0,0,0,0.8)]">
+    <h2 class="text-2xl w-full text-center m-[0_0_2rem_0]">LATEST SINGLE</h2>
+    <iframe
+      width="auto" height="auto" src={`https://www.youtube.com/embed/${videoIdFromUrl(mediaSchema.video)}`} title="YouTube video player"
+      style="border: 0"
+      class="w-full aspect-video"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen=""></iframe>
+  </div>
+</section>
+
+<style>
+    h2 {
+        font-family: var(--theme-font);
+        color: var(--theme-main-color);
+        border-color: var(--theme-main-color);
+    }
+</style>
