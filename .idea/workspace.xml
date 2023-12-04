@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c7e4a2b-1ab7-4d2a-b36f-0be4618ba013" name="Changes" comment="adopt from old website">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    <list default="true" id="7c7e4a2b-1ab7-4d2a-b36f-0be4618ba013" name="Changes" comment="v1.0.0">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/Footer.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/Footer.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/Media.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/Media.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/Shows.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/Shows.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/Socials.astro" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +24,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -84,7 +94,7 @@
       <updated>1701472226702</updated>
       <workItem from="1701472227959" duration="612000" />
       <workItem from="1701472848388" duration="6419000" />
-      <workItem from="1701608816002" duration="6498000" />
+      <workItem from="1701608816002" duration="8143000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -102,7 +112,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701682200500</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="v1.0.0">
+      <option name="closed" value="true" />
+      <created>1701682224931</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701682224931</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,6 +140,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="adopt from old website" />
-    <option name="LAST_COMMIT_MESSAGE" value="adopt from old website" />
+    <MESSAGE value="v1.0.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.0.0" />
   </component>
 </project>

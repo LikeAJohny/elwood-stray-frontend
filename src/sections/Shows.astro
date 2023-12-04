@@ -1,6 +1,6 @@
 ---
 import { loadSchema } from "../api/queries";
-import { Shows } from "../types/schemas";
+import type { Shows } from "../types/schemas";
 import dayjs from "dayjs";
 
 const showsSchema = await loadSchema<Shows>("shows");

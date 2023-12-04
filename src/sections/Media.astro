@@ -1,7 +1,7 @@
 ---
 import { loadSchema } from "../api/queries";
 import { videoIdFromUrl } from "../lib/video-urls";
-import { Media } from "../types/schemas";
+import type { Media } from "../types/schemas";
 
 const mediaSchema = await loadSchema<Media>("media");
 ---
