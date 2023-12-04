@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c7e4a2b-1ab7-4d2a-b36f-0be4618ba013" name="Changes" comment="v1.0.0">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/Footer.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/Footer.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/Media.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/Media.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/Shows.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/Shows.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/Socials.astro" beforeDir="false" />
-    </list>
+    <list default="true" id="7c7e4a2b-1ab7-4d2a-b36f-0be4618ba013" name="Changes" comment="fix build errors" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,7 +88,7 @@
       <updated>1701472226702</updated>
       <workItem from="1701472227959" duration="612000" />
       <workItem from="1701472848388" duration="6419000" />
-      <workItem from="1701608816002" duration="8143000" />
+      <workItem from="1701608816002" duration="8272000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -120,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701682224931</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix build errors">
+      <option name="closed" value="true" />
+      <created>1701684751581</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1701684751581</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +143,7 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="adopt from old website" />
     <MESSAGE value="v1.0.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.0.0" />
+    <MESSAGE value="fix build errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix build errors" />
   </component>
 </project>
