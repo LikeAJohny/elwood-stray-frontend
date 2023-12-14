@@ -18,6 +18,9 @@ const shows: Shows["shows"] = showsSchema.shows.filter((show) => dayjs(show.date
         <div class="show">
           <div class="date text-xl">
             {dayjs(show.date).format("ddd, MMM DD YYYY")}
+            {show.endDate && (
+              <span> - {dayjs(show.endDate).format("ddd, MMM DD YYYY")}</span>
+            )}
           </div>
           <div class="info">
             {show.name}

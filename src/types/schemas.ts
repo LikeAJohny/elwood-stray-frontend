@@ -35,6 +35,7 @@ export type Shows = {
   headline: string;
   shows: {
     date: string;
+    endDate?: string;
     name?: string;
     subName?: string;
     location?: string;
