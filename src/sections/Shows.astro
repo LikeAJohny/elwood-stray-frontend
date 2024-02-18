@@ -4,7 +4,8 @@ import type { Shows } from "../types/schemas";
 import dayjs from "dayjs";
 
 const showsSchema = await loadSchema<Shows>("shows");
-const shows: Shows["shows"] = showsSchema.shows.filter((show) => dayjs(show.date).isSameOrAfter(dayjs()));
+const shows: Shows["shows"] = showsSchema.shows
+  .filter((show) => dayjs(show.date).isAfter(dayjs().subtract(1, "d")));
 ---
 
 <section id="shows">
@@ -109,6 +110,8 @@ const shows: Shows["shows"] = showsSchema.shows.filter((show) => dayjs(show.date
     }
 
     @keyframes pulse {
-        0% { box-shadow: 0 0 0 0 var(--theme-secondary-color); }
+        0% {
+            box-shadow: 0 0 0 0 var(--theme-secondary-color);
+        }
     }
 </style>
