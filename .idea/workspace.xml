@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c7e4a2b-1ab7-4d2a-b36f-0be4618ba013" name="Changes" comment="v1.0.4">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/Shows.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/Shows.astro" afterDir="false" />
+    <list default="true" id="7c7e4a2b-1ab7-4d2a-b36f-0be4618ba013" name="Changes" comment="fix show filter">
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +96,7 @@
       <workItem from="1703855171789" duration="1108000" />
       <workItem from="1703879958718" duration="20000" />
       <workItem from="1703881022439" duration="1251000" />
-      <workItem from="1708254036132" duration="27000" />
+      <workItem from="1708254036132" duration="85000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -187,7 +186,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702559749409</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="fix show filter">
+      <option name="closed" value="true" />
+      <created>1708254114376</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1708254114376</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,6 +223,7 @@
     <MESSAGE value="v1.0.3" />
     <MESSAGE value="optional show end date" />
     <MESSAGE value="v1.0.4" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.0.4" />
+    <MESSAGE value="fix show filter" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix show filter" />
   </component>
 </project>
