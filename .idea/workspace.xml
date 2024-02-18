@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c7e4a2b-1ab7-4d2a-b36f-0be4618ba013" name="Changes" comment="v1.0.3">
+    <list default="true" id="7c7e4a2b-1ab7-4d2a-b36f-0be4618ba013" name="Changes" comment="v1.0.4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sections/Shows.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/Shows.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/schemas.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/schemas.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +46,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/jonas/Dev/likeajohny/websites/elwood-stray/elwood-stray-frontend/src/lib&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jonas/Dev/likeajohny/websites/elwood-stray/elwood-stray-frontend/public&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -70,11 +69,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/lib" />
       <recent name="$PROJECT_DIR$/public/assets" />
       <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$/src/static/fonts" />
-      <recent name="$PROJECT_DIR$/src/static/css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/assets" />
@@ -93,7 +92,12 @@
       <workItem from="1701472227959" duration="612000" />
       <workItem from="1701472848388" duration="6419000" />
       <workItem from="1701608816002" duration="11434000" />
-      <workItem from="1702559469764" duration="109000" />
+      <workItem from="1702559469764" duration="399000" />
+      <workItem from="1702580999191" duration="915000" />
+      <workItem from="1703855171789" duration="1108000" />
+      <workItem from="1703879958718" duration="20000" />
+      <workItem from="1703881022439" duration="1251000" />
+      <workItem from="1708254036132" duration="27000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -167,7 +171,23 @@
       <option name="project" value="LOCAL" />
       <updated>1701692328018</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="optional show end date">
+      <option name="closed" value="true" />
+      <created>1702559737913</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1702559737913</updated>
+    </task>
+    <task id="LOCAL-00011" summary="v1.0.4">
+      <option name="closed" value="true" />
+      <created>1702559749409</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1702559749409</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +214,8 @@
     <MESSAGE value="v1.0.2" />
     <MESSAGE value="small style adjustments" />
     <MESSAGE value="v1.0.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.0.3" />
+    <MESSAGE value="optional show end date" />
+    <MESSAGE value="v1.0.4" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.0.4" />
   </component>
 </project>

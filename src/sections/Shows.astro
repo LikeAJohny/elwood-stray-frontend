@@ -4,7 +4,7 @@ import type { Shows } from "../types/schemas";
 import dayjs from "dayjs";
 
 const showsSchema = await loadSchema<Shows>("shows");
-const shows: Shows["shows"] = showsSchema.shows.filter((show) => dayjs(show.date).isAfter(dayjs()));
+const shows: Shows["shows"] = showsSchema.shows.filter((show) => dayjs(show.date).isSameOrAfter(dayjs()));
 ---
 
 <section id="shows">
