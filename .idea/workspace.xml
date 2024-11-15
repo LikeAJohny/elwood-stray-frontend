@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c7e4a2b-1ab7-4d2a-b36f-0be4618ba013" name="Changes" comment="v1.0.6">
+    <list default="true" id="7c7e4a2b-1ab7-4d2a-b36f-0be4618ba013" name="Changes" comment="v1.0.7">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sections/Shows.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/Shows.astro" afterDir="false" />
     </list>
@@ -29,6 +29,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;LikeAJohny&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:LikeAJohny/elwood-stray-frontend.git&quot;,
+    &quot;accountId&quot;: &quot;577cd301-2d60-4852-8759-93ecc6d10509&quot;
+  }
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -81,6 +93,13 @@
       <recent name="$PROJECT_DIR$/public/images" />
     </key>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.23726.96" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -98,7 +117,10 @@
       <workItem from="1703879958718" duration="20000" />
       <workItem from="1703881022439" duration="1251000" />
       <workItem from="1708254036132" duration="575000" />
-      <workItem from="1708257961294" duration="29000" />
+      <workItem from="1708257961294" duration="803000" />
+      <workItem from="1708443145947" duration="5000" />
+      <workItem from="1731675769123" duration="20000" />
+      <workItem from="1731675810347" duration="75000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -220,7 +242,23 @@
       <option name="project" value="LOCAL" />
       <updated>1708257728891</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="fix ticketlink">
+      <option name="closed" value="true" />
+      <created>1708257998254</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1708257998254</updated>
+    </task>
+    <task id="LOCAL-00017" summary="v1.0.7">
+      <option name="closed" value="true" />
+      <created>1708258014054</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1708258014054</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,6 +291,8 @@
     <MESSAGE value="v1.0.5" />
     <MESSAGE value="fix show filter without extra dependency" />
     <MESSAGE value="v1.0.6" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.0.6" />
+    <MESSAGE value="fix ticketlink" />
+    <MESSAGE value="v1.0.7" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.0.7" />
   </component>
 </project>
